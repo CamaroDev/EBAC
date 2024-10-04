@@ -1,6 +1,6 @@
-#include <stdio.h> //biblioteca de comunicação com o usuário
-#include <stdlib.h> //biblioteca de alocação de espaço em memória
-#include <locale.h> //biblioteca de alocações de texto por região 
+#include <stdio.h> //biblioteca de comunicão com o usuário
+#include <stdlib.h> //biblioteca de alocacão de espaço em memória
+#include <locale.h> //biblioteca de alocaçoes de texto por região 
 
 int main ()
     {
@@ -22,10 +22,12 @@ int main ()
 
 	    printf("\t2- Consultar Nomes\n");
 
-	    printf("\t3- Deletar Nomes\n\n"); 
-  	    printf("Opção: ");//fim do menu
+	    printf("\t3- Deletar Nomes\n\n");
+		 
+		printf("\t4- Sair  do sistema\n\n");
+  	    printf("Opçõo: ");//fim do menu
 	
-	    scanf("%d", &opcao); //armazenando a escolha do usuário
+	    scanf("%d", &opcao); //armazenando a escolha do usu?rio
 	
 	    system("cls");
 	    
@@ -43,10 +45,18 @@ int main ()
 		    break;
 		    
 		    case 3:
-		    printf("Voce escolheu deletar nomes!\n");
+		    printf("Você escolheu deletar nomes!\n");
 		    system("pause");
 		    break;
-		       
+
+
+			case 4:
+			printf("Obrigado por utilizar o sistema!\n");
+			return 0;
+			break;
+
+
+
 		    default:
 		    printf("Essa opção não esta disponivel\n");
 		    system("pause");
@@ -57,3 +67,4 @@ int main ()
 	
 	 
 	}	
+}
